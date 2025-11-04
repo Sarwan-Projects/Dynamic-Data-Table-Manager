@@ -1,0 +1,11 @@
+id,name,email,age,role,department,location
+1,John Doe,john@example.com,28,Developer,Engineering,New York
+2,Jane Smith,jane@example.com,32,Designer,Design,San Francisco
+3,Bob Johnson,bob@example.com,45,Manager,Operations,Chicago
+4,Alice Brown,alice@example.com,29,Developer,Engineering,Austin
+5,Charlie Wilson,charlie@example.com,35,Analyst,Data Science,Seattle
+6,Diana Prince,diana@example.com,31,Developer,Engineering,Boston
+7,Ethan Hunt,ethan@example.com,38,Manager,Sales,Miami
+8,Fiona Green,fiona@example.com,27,Designer,Design,Portland
+9,George Miller,george@example.com,42,Analyst,Finance,Denver
+10,Hannah Lee,hannah@example.com,30,Developer,Engineering,Los Angeles

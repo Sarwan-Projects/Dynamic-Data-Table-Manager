@@ -35,19 +35,21 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## 🛠️ Tech Stack
 
-- **Next.js 14** (App Router)
-- **React 18**
-- **TypeScript**
-- **Redux Toolkit** + Redux Persist
-- **Material UI v5**
-- **@dnd-kit** (Drag and Drop)
-- **PapaParse** (CSV parsing)
-- **FileSaver.js** (CSV export)
+- **Next.js 14.2.3** (App Router)
+- **React 18.3.1**
+- **TypeScript 5.4.5**
+- **Redux Toolkit 2.2.3** + Redux Persist 6.0.0
+- **Material UI v5.15.15**
+- **React Hook Form 7.51.3** (Form handling)
+- **@dnd-kit** (Drag and Drop column reordering)
+- **PapaParse 5.4.1** (CSV parsing)
+- **FileSaver.js 2.0.5** (CSV export)
+- **Zod 3.23.6** (Schema validation)
 
 ## 📦 Installation & Setup
 
 ### Prerequisites
-- Node.js 18+ installed
+- Node.js 18.20.0 or higher
 - npm or yarn package manager
 
 ### Steps
@@ -131,22 +133,56 @@ data-table-manager/
 
 ## 📝 Features Checklist
 
-### Core Requirements
-- [x] Table View with 3-state sorting (ASC/DESC/Default), searching, pagination
+### Core Requirements ✅
+- [x] Table View with 3-state sorting (ASC → DESC → Default)
+- [x] Global search across all fields
+- [x] Client-side pagination (10 rows per page)
 - [x] Add new rows dynamically with validation
 - [x] Dynamic column management (add, show/hide)
-- [x] CSV Import with error handling
-- [x] CSV Export (visible columns only)
-- [x] Persistent column preferences
+- [x] CSV Import with error handling (PapaParse)
+- [x] CSV Export (visible columns only, FileSaver.js)
+- [x] Persistent column preferences (Redux Persist + localStorage)
 
-### Bonus Requirements
+### Bonus Requirements ✅
 - [x] Inline row editing (double-click to edit)
-- [x] Input validation (age, email, required fields)
-- [x] Save All / Cancel All buttons
-- [x] Row actions (Edit, Delete with confirmation)
-- [x] Theme toggle (Light/Dark mode)
-- [x] Column reordering via drag-and-drop
-- [x] Fully responsive design
+- [x] Input validation (age: 0-150, email format, required fields)
+- [x] Save All / Cancel All buttons for bulk editing
+- [x] Row actions (Edit, Delete with confirmation dialog)
+- [x] Theme toggle (Light/Dark mode with MUI theming)
+- [x] Column reordering via drag-and-drop (@dnd-kit)
+- [x] Fully responsive design (mobile, tablet, desktop)
+- [x] TypeScript with strict type checking
+- [x] React Hook Form integration
+
+## 🌐 Deployment
+
+### Deploy to Render
+
+1. Fork or clone this repository
+2. Sign up at [Render.com](https://render.com)
+3. Create a new Web Service
+4. Connect your GitHub repository
+5. Configure:
+   - **Root Directory**: `data-table-manager`
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+   - **Environment Variable**: `NODE_VERSION=18.20.0`
+6. Deploy!
+
+### Deploy to Vercel
+
+```bash
+cd data-table-manager
+vercel
+```
+
+### Deploy to Netlify
+
+```bash
+cd data-table-manager
+npm run build
+# Deploy the .next folder
+```
 
 ## 📄 License
 
@@ -154,4 +190,13 @@ MIT
 
 ## 👨‍💻 Author
 
-Created as part of a frontend interview assignment demonstrating advanced React, Redux, and TypeScript skills.
+Created as part of a frontend interview assignment demonstrating:
+- Advanced React 18 patterns and hooks
+- Redux Toolkit state management
+- Material UI component library
+- TypeScript best practices
+- CSV data handling
+- Drag & drop functionality
+- Form validation
+- Responsive design
+- Modern Next.js 14 App Router

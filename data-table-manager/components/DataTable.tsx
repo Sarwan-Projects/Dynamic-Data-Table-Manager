@@ -246,12 +246,39 @@ export default function DataTable() {
         </Paper>
       )}
 
-      <TableContainer component={Paper}>
-        <Table>
+      <TableContainer 
+        component={Paper}
+        sx={{
+          maxHeight: 600,
+          overflow: 'auto',
+          '&::-webkit-scrollbar': {
+            width: '8px',
+            height: '8px',
+          },
+          '&::-webkit-scrollbar-track': {
+            backgroundColor: 'rgba(0,0,0,0.1)',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            backgroundColor: 'rgba(0,0,0,0.3)',
+            borderRadius: '4px',
+            '&:hover': {
+              backgroundColor: 'rgba(0,0,0,0.5)',
+            },
+          },
+        }}
+      >
+        <Table stickyHeader>
           <TableHead>
             <TableRow>
               {visibleColumns.map((column) => (
-                <TableCell key={column.id}>
+                <TableCell 
+                  key={column.id}
+                  sx={{
+                    backgroundColor: 'background.paper',
+                    fontWeight: 'bold',
+                    zIndex: 1,
+                  }}
+                >
                   <TableSortLabel
                     active={sortColumn === column.id}
                     direction={sortColumn === column.id ? sortDirection : 'asc'}
@@ -261,7 +288,15 @@ export default function DataTable() {
                   </TableSortLabel>
                 </TableCell>
               ))}
-              <TableCell>Actions</TableCell>
+              <TableCell
+                sx={{
+                  backgroundColor: 'background.paper',
+                  fontWeight: 'bold',
+                  zIndex: 1,
+                }}
+              >
+                Actions
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

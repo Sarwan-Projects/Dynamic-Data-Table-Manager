@@ -4,7 +4,13 @@ A powerful data table manager built with Next.js 14, Redux Toolkit, and Material
 
 ## 🚀 Live Demo
 
-Visit the project folder `data-table-manager` and run:
+**🌐 [View Live Application](https://dynamic-data-table-manager-8hs5.onrender.com)**
+
+Try it out now! The application is deployed and fully functional.
+
+## 💻 Local Development
+
+To run locally:
 
 ```bash
 cd data-table-manager
@@ -156,8 +162,12 @@ data-table-manager/
 
 ## 🌐 Deployment
 
-### Deploy to Render
+### Live Production Site
+This project is deployed on Render: **[https://dynamic-data-table-manager-8hs5.onrender.com](https://dynamic-data-table-manager-8hs5.onrender.com)**
 
+### Deploy Your Own Instance
+
+#### Deploy to Render
 1. Fork or clone this repository
 2. Sign up at [Render.com](https://render.com)
 3. Create a new Web Service
@@ -169,15 +179,13 @@ data-table-manager/
    - **Environment Variable**: `NODE_VERSION=18.20.0`
 6. Deploy!
 
-### Deploy to Vercel
-
+#### Deploy to Vercel
 ```bash
 cd data-table-manager
 vercel
 ```
 
-### Deploy to Netlify
-
+#### Deploy to Netlify
 ```bash
 cd data-table-manager
 npm run build
@@ -187,6 +195,11 @@ npm run build
 ## 📄 License
 
 MIT
+
+## � L inks
+
+- **Live Demo**: [https://dynamic-data-table-manager-8hs5.onrender.com](https://dynamic-data-table-manager-8hs5.onrender.com)
+- **GitHub Repository**: [https://github.com/Sarwan-Projects/Dynamic-Data-Table-Manager](https://github.com/Sarwan-Projects/Dynamic-Data-Table-Manager)
 
 ## 👨‍💻 Author
 
@@ -200,3 +213,7 @@ Created as part of a frontend interview assignment demonstrating:
 - Form validation
 - Responsive design
 - Modern Next.js 14 App Router
+
+---
+
+**⭐ If you find this project useful, please consider giving it a star on GitHub!**
